@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FlowerSpinner from './Components/Navbar/Loader/Loader';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
         <p>
           This will be The Muses.
         </p>
+        <FlowerSpinner></FlowerSpinner>
         <a
           className="App-link"
           href="https://reactjs.org"
