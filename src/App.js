@@ -12,7 +12,6 @@ function App() {
         <p>
           This will be The Muses.
         </p>
-        <FlowerSpinner></FlowerSpinner>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -21,6 +20,7 @@ function App() {
         >
           An open source data repository
         </a>
+        <FlowerSpinner></FlowerSpinner>
       </header>
     </div>
   );
