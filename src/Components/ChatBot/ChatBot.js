@@ -111,8 +111,20 @@ class SimpleForm extends Component {
                         id: 'purpose',
                         options: [
                             { value: 'donate', label: 'Donate', trigger: 'donate' },
-                            { value: 'access', label: 'Access Data', trigger: '5' },
-                            { value: 'learn', label: 'Learn More', trigger: '5' },
+                            { value: 'access', label: 'Access Data', trigger: 'access' },
+                            { value: 'learn', label: 'Learn More', trigger: 'learn' },
+                        ],
+                    },
+                    {
+                        id: 'learn',
+                        message: 'What would you like to know?',
+                        trigger: 'learntype',
+                    },
+                    {
+                        id: 'learntype',
+                        options: [
+                            { value: 'what', label: 'What is The Muses', trigger: 'donatedescrip' },
+                            { value: 'question', label: 'You have a question for us', trigger: 'donatedescrip' },
                         ],
                     },
                     {
@@ -123,9 +135,34 @@ class SimpleForm extends Component {
                     {
                         id: 'donatetype',
                         options: [
-                            { value: 'money', label: 'Donate Funds', trigger: '5' },
-                            { value: 'time', label: 'Donate Time', trigger: '5' },
+                            { value: 'money', label: 'Donate Funds', trigger: 'donatedescripmessage' },
+                            { value: 'time', label: 'Donate Time', trigger: 'donatedescripmessage' },
                         ],
+                    },
+                    {
+                        id: 'donatedescripmessage',
+                        message: 'We are so glad you want to help, please give us a brief indication of how you will be donating this:',
+                        trigger: 'donatedescrip',
+                    },
+                    {
+                        id: 'donatedescrip',
+                        user: true,
+                        trigger: 'donatethanks',
+                    },
+                    {
+                        id: 'donatethanks',
+                        message: 'Thank you so much for your contribution. We just need a few more details from you.',
+                        trigger: 'donatedescrip',
+                    },
+                    {
+                        id: 'access',
+                        message: 'Our data is open for any non-profit organizations or projects. Please give us a brief indication of what you intend to use the data for:',
+                        trigger: 'accesstype',
+                    },
+                    {
+                        id: 'accesstype',
+                        user: true,
+                        trigger: '',
                     },
                     {
                         id: '5',
@@ -198,6 +235,11 @@ class SimpleForm extends Component {
                         id: 'update-age',
                         update: 'age',
                         trigger: '7',
+                    },
+                    {
+                        id: 'questions',
+                        message: 'Is there anything else that we can help you with?',
+                        user: true,
                     },
                     {
                         id: 'end-message',
