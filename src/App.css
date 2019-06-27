@@ -16,11 +16,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #004000;
+  background-color: #EFEFF2;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.navBar {
+  position: absolute;
 }
 
 @keyframes App-logo-spin {

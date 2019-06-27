@@ -1,6 +1,7 @@
 import React from "react";
 // import { faSearch } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./NabBar.css";
 import {
   Navbar,
   NavbarToggler,
@@ -52,11 +53,30 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <Navbar type="dark" theme="primary" expand="md">
-        <NavbarBrand href="#">Shards React</NavbarBrand>
-        <NavbarToggler onClick={this.toggleNavbar} />
+      // <Navbar class="navBar" type="dark" theme="primary" expand="md">
+        <div className="navBar">
+          <img
+            src="http://objectiveart01.tripod.com/_borders/top.ht1.jpg"
+            className="navLogo"
+          />
+          <div class="navItems">
+          <div class="navItem">
+            <a>Access Database</a>
+          </div>
+          <div class="navItem">
+            <a>Donate</a>
+          </div>
+          <div class="navItem">
+            <a>About</a>
+          </div>
+          <div class="navItem">
+            <a>Contact Us</a>
+          </div>
+        </div>
+        {/* <NavbarBrand href="#">Shards React</NavbarBrand>
+        <NavbarToggler onClick={this.toggleNavbar} /> */}
 
-        <Collapse open={this.state.collapseOpen} navbar>
+        {/* <Collapse open={this.state.collapseOpen} navbar>
           <Nav navbar>
             <NavItem>
               <NavLink active href="#">
@@ -88,13 +108,15 @@ export default class NavBar extends React.Component {
               <InputGroupAddon type="prepend">
                 <InputGroupText>
                   {/* <FontAwesomeIcon icon={faSearch} /> */}
-                </InputGroupText>
+        {/* </InputGroupText>
               </InputGroupAddon>
               <FormInput className="border-0" placeholder="Search..." />
             </InputGroup>
-          </Nav>
-        </Collapse>
-      </Navbar>
+          </Nav> */}
+        {/* </Collapse> */}
+      {/* // </Navbar> */}
+        </div>
+        
     );
   }
 }

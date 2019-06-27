@@ -1,0 +1,26 @@
+.navLogo {
+    max-width: 60px;
+    max-height: 200px;
+    float: left;
+    background-color: transparent;
+}
+
+.navItem {
+    float: right;
+    background-color: transparent;
+    padding-right: 50px;
+}
+
+.navItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+}
