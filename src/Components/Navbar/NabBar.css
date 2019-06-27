@@ -19,9 +19,11 @@
 }
 
 .navBar {
-    position: absolute;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
     min-height: 60px;
+    background-color: #2D2F36;
 }
